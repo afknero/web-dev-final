@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hack the Gibson</title>
+  </head>
+  <body>
+    <div id="terminal">
+      <div id="prompt-message" class="line"></div>
+      <div class="input-line">
+        <span>&gt;</span>
+        <input id="password-input" type="text" autofocus />
+      </div>
+    </div>
+
+    <div id="set-height"></div>
+    <p id="time"></p>
+    <div id="video-container" style="display: none">
+      <video
+        id="traverse-video"
+        tabindex="0"
+        autobuffer="autobuffer"
+        preload="metadata"
+      >
+        <source src="media/traverse.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
